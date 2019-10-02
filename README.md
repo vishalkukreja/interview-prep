@@ -78,7 +78,8 @@ Once the page is loaded, the browser sends further async requests as needed.
      Event propagation is a mechanism that defines how events propagate or travel through the DOM tree to arrives at its target and what happens to it afterward.
      Event bubbling is a type of event propagation where the event first triggers on the deepest target element. It causes all events in the child nodes to be automatically passed to its parent nodes. The advantage of this method is speed because the code only requires to traverse the DOM tree once.
 17. ### Difference between debouncing and throttling?
-     Answer To be added
+     - Throttling will delay executing a function. It will reduce the notifications of an event that fires multiple times.
+     - Debouncing will bunch a series of sequential calls to a function into a single call to that function. It ensures that one notification is made for an event that fires multiple times.
 18. ### Difference between call, apply and bind?
      Call/apply call the function immediately, whereas bind returns a function that, when later executed.
      Use .bind() when you want that function to later be called with a certain context, useful in events. Use .call() or .apply() when you want to invoke the function immediately, and modify the context.
